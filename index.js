@@ -9,9 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@trial1.1tkz1.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@trial1.1tkz1.mongodb.net/`;
 
-
+// mongodb+srv://nahid95622:<db_password>@trial1.1tkz1.mongodb.net/
 
 const client = new MongoClient(uri, {
   serverApi: {
